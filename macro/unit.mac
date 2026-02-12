@@ -3,7 +3,7 @@
 /run/verbose 2
 #
 #
-/physics/setIonInelasticProcess bic
+/testem/phys/addPhysics emlivermore
 #
 #/run/numberOfThreads 1
 #
@@ -11,10 +11,10 @@
 #
 #
 /process/list
-# /process/inactivate hadElastic
-/process/inactivate ionElastic
 #
+/gun/particle gamma
+/testem/phys/setCuts 0.0001 mm
+/testem/det/setThickness 0.001 mm
 #
-/histoManager/setFileName unit
 ##
 /run/beamOn 1
